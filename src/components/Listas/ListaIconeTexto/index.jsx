@@ -38,7 +38,7 @@ const ListaIconeTexto = (props) => {
                 }
 
                 <div className='feature-box-content'>
-                  {item.title && <span className="font-medium title">{item.title}</span>}
+                  {item.title && <h6 className="font-medium text-[18px]">{item.title}</h6>}
                   {item.content && <p>{item.content}</p>}
                   {props.theme === "icon-with-text-11" ? <Buttons ariaLabel="iconwithtext" href="#" className="font-medium font-serif uppercase btn-link after:h-[2px] after:bg-darkgray md:text-md md:mb-[15px]" size="xl" color="#232323" title="Read more" /> : ""}
                 </div>
@@ -50,33 +50,6 @@ const ListaIconeTexto = (props) => {
       }
     </Grid>
   )
-}
-
-ListaIconeTexto.defaultProps = {
-  data: IconWithTextData_01,
-  animationDelay: 0.6,
-  animationDuration: 0.8,
-  animationTransition: "circOut",
-  theme: "icon-with-text-01",
-}
-
-ListaIconeTexto.propTypes = {
-  className: PropTypes.string,
-  data: PropTypes.arrayOf(
-    PropTypes.exact({
-      icon: PropTypes.string,
-      title: PropTypes.string,
-      content: PropTypes.string,
-      linkTitle: PropTypes.string,
-      img: PropTypes.string,
-      link: PropTypes.string,
-    })
-  ),
-  animation: PropTypes.object,
-  animationDelay: PropTypes.number,
-  animationTransition: PropTypes.string,
-  theme: PropTypes.string,
-  grid: PropTypes.string,
 }
 
 

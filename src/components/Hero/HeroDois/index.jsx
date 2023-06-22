@@ -24,7 +24,7 @@ const HeroDois = ({itens}) => {
                             return (
                                 <SwiperSlide key={i} className="bg-no-repeat py-[126px] lg:py-64 xl:py-64 bg-cover relative overflow-hidden bg-center" style={{ backgroundImage: `url(${item.img})` }}>
                                     <div className="absolute h-full w-full opacity-70 bg-slate-800 top-0 left-0 "></div>
-                                    <Container className="full-screen">
+                                    <Container>
                                         <Grid container className="justify-center h-full">
                                             <Grid item lg={10} xl={8} className="relative flex flex-col justify-center text-center h-full px-[0px] xs:px-[15px] landscape:md:h-[600px]">
                                                 <div dangerouslySetInnerHTML={{ __html: item.title }}></div>

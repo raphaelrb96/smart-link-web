@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 import PropTypes from "prop-types";
 import { Button } from 'react-bootstrap';
 
+import "../../..//Assets/scss/components/_button.scss"
+
 
 
 // css
@@ -25,7 +27,7 @@ const Buttons = (props) => {
         as={props.href ? "a" : (props.type === "submit" ? "button" : "a")}
         type={props.type === "submit" ? "submit" : undefined}
         style={style}
-        className={`border-[2px] px-3 py-2 border-solid btn-${props.size}${props.className ? ' ' + props.className : ''}${typeof (props.themeColor) === "object" ? " btn-gradient" : ""}${typeof (props.color) === "object" ? " text-gradient" : ""}`}
+        className={`border-[2px] border-solid btn-${props.size}${props.className ? ' ' + props.className : ''}${typeof (props.themeColor) === "object" ? " btn-gradient" : ""}${typeof (props.color) === "object" ? " text-gradient" : ""}`}
         href={props.href}
         onClick={props.onClick}
         disabled={props.disabled}
@@ -37,16 +39,16 @@ const Buttons = (props) => {
         <ButtonInner {...props} />
       </Button>
     ) : (
-      <Button
+      <a
         style={style}
         target={props.target}
-        className={`btn border-[2px] px-3 py-2 border-solid btn-${props.size}${props.className ? ' ' + props.className : ''}${typeof (props.themeColor) === "object" ? " btn-gradient" : ""}${typeof (props.color) === "object" ? " text-gradient" : ""} `}
+        className={`btn border-[2px] border-solid btn-${props.size}${props.className ? ' ' + props.className : ''}${typeof (props.themeColor) === "object" ? " btn-gradient" : ""}${typeof (props.color) === "object" ? " text-gradient" : ""} `}
         to={props.to ? props.to : "#"}
         onClick={props.onClick}
         color={props.btnColor}
         aria-label={props.ariaLabel}>
         <ButtonInner {...props} />
-      </Button>
+      </a>
     )
   )
 }

@@ -15540,6 +15540,10 @@ Plugin URI: https://iconsmind.com/view_icons/
   content: "\ec3f";
 }
 
+.icon-money-bill-wave:before {
+  content: "\f53a";
+}
+
 .line-icon-Selfie:before {
   content: "\ec40";
 }
@@ -27429,6 +27433,10 @@ Plugin URI: https://museomix.be/doc/Icons-ET-LineIcons.html
 }
 
 .icon-flag:before {
+  content: "\e024";
+}
+
+.icon-bolt:before {
   content: "\e024";
 }
 

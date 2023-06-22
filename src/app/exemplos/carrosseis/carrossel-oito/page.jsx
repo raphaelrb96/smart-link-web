@@ -1,6 +1,6 @@
 "use client"
 
-import { Grid } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import RouteLayout from '../../../layout';
 import CarrosselUm from "../../../../components/Carrosseis/CarrosselUm";
 import CarrosselOito from "../../../../components/Carrosseis/CarrosselOito";
@@ -33,6 +33,7 @@ const data = [
 export default function CarrosselOitoPage() {
   return (
     <RouteLayout title="Carrossel Oito">
+      <Container>
       <Grid container justifyContent="center" alignContent={'center'} alignItems={'center'}>
         <Grid item sm={12} md={12} lg={12}>
           <h6 className="mt-10 text-dark text-center mx-6 font-medium mb-35px] lg:mb-[30px]">Seu Carrossel se parecerá com este:</h6>
@@ -52,6 +53,7 @@ export default function CarrosselOitoPage() {
           />
         </Grid>
       </Grid>
+      </Container>
       
     </RouteLayout>
     

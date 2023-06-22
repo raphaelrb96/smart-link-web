@@ -9,6 +9,9 @@ import { PropTypes } from "prop-types";
 import { Grid, Typography } from "@mui/material";
 import { fadeIn, fadeInLeft } from "../../../functions/GlobalAnimations";
 
+import "../../../Assets/scss/pages/_marketingagency.scss"
+
+
 const CarrosselCinco = (props) => {
     const swiperRef = React.useRef(null)
 
