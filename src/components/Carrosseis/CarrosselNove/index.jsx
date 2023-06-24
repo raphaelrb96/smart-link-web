@@ -27,7 +27,7 @@ const CarrosselNove = (props) => {
           <Swiper
             className="text-slider-02 black-move"
             modules={[Autoplay, Pagination, Navigation]}
-            breakpoints={{ 992: { slidesPerView: 2 }, 767: { slidesPerView: 1 } }}
+            breakpoints={{ 1200: { slidesPerView: 2 }, 900: { slidesPerView: 1 } }}
             autoplay={{ delay: 4500, disableOnInteraction: false }}
             slidesPerView={1}
             centeredSlides={true}
@@ -42,11 +42,11 @@ const CarrosselNove = (props) => {
                         <div className="cover-background items-start flex h-[150%] justify-end p-[4.5rem] lg:p-12 md:p-16 xs:p-12" style={{ backgroundImage: `url(${item.img})` }}>
                             <div className="absolute w-full top-0 left-0 overlay bg-darkgray"></div>
                             <div className="text-wrapper flex flex-col w-[50%] bg-white box-shadow-extra-large no-transition p-[4.5rem] pt-0 slider-zoom-content z-[1] relative xl:w-[75%] xl:p-[3rem] lg:w-[80%] lg:p-[2.5rem] md:w-[55%] md:p-[4.5rem] sm:w-[60%] xs:w-full">
-                                <h3 className="heading-4 -mt-20 -mr-8 mb-10 ml-auto w-20 text-[#fff] text-center pb-4 pt-24 bg-purple-800 text-[40px] leading-[3.4rem] font-medium font-serif self-end lg:w-[75px] md:mt-[-50px]">
+                                <h3 className="heading-3 -mt-20 -mr-8 mb-10 ml-auto w-20 text-[#fff] text-center pb-4 pt-24 bg-purple-800 text-[40px] leading-[3.4rem] font-medium font-serif self-end lg:w-[75px] md:mt-[-50px]">
                                   {i + 1 >= 10 ? "" : "0"}{i + 1}
                                 </h3>
                                 <h4 className="heading-5 font-serif text-darkgray text-[2.0rem] leading-[3rem] p-0 mb-[25px] -tracking-[.5px] lg:mb-[15px] md:text-[22px] sm:text-[20px]">
-                                  <span className="font-semibold block mr-[5px] md:inline-block xs:block">
+                                  <span className="font-semibold block mr-[5px] lg:w-[60%] md:inline-block xs:block">
                                     {item.title}
                                   </span>
                                   {item.subtitle}

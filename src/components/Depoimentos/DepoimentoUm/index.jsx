@@ -39,7 +39,7 @@ const DepoimentoUm = (props) => {
                                     {item.content && <p className="mb-0">{item.content}</p>}
                                 </div>
                                 <div className="px-[20px] flex items-center">
-                                    {item.img && <img width="" height="" className="rounded-circle w-[60px] h-[60px] mr-[19px]" src={item.img} alt="" />}
+                                    {item.img && <img width="" height="" className="rounded-circle object-cover w-[60px] h-[60px] mr-[19px]" src={item.img} alt="" />}
                                     <div className="inline-block align-middle">
                                         {item.name && <span className="font-serif text-md font-medium leading-[24px] text-darkgray block">{item.name}</span>}
                                         {item.designation && <span className="block text-sm">{item.designation}</span>}

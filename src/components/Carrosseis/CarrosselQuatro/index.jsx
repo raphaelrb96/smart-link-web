@@ -14,7 +14,7 @@ import "../../../Assets/scss/pages/_marketingagency.scss"
 
 
 const CarrosselQuatro = (props) => {
-    const swiperRef = React.useRef(null)
+    const swiperRef = React.useRef(null);
 
     return (
         <div className={`relative ${props.className}`}>

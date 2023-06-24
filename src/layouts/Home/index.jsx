@@ -12,7 +12,12 @@ import { Grid } from '@mui/material';
 import DepoimentoUm from '../../components/Depoimentos/DepoimentoUm';
 import CopyUm from '../../components/Copywriting/CopyUm';
 import CopyBannerRotativo from "../../components/Copywriting/CopyBannerRotativo";
-import ContainerModulos from "../../components/Containers/ContainerModulos"
+import ContainerModulos from "../../components/Containers/ContainerModulos";
+import ContainerBonusExtra from "../../components/Containers/ContainerBonusExtra";
+import ContainerChamadaUm from "../../components/Containers/ContainerChamadaUm";
+import ContainerQuemSomos from "../../components/Containers/ContainerQuemSomos";
+
+
 
 import { Col, Container, Row } from 'react-bootstrap';
 import Buttons from '../../components/Button/Buttons';
@@ -95,7 +100,8 @@ const HeroTresData = {
     btn: 'QUERO APRENDER A LUCRAR',
     btnExtra: 'Assista o vídeo',
     subhead: 'Monetize seu tempo online:',
-    headline: 'Ganhe muito dinheiro com suas redes sociais'
+    headline: 'Ganhe muito dinheiro com suas redes sociais',
+    description: 'Você está prestes a descobrir uma oportunidade única que pode mudar completamente a forma como você monetiza suas redes sociais.'
 };
 
 const dataSoltions = {
@@ -126,22 +132,22 @@ const dataSoltions = {
 const depoimento = {
     lista: [
         {
-            name: 'Herman Miller',
-            designation: 'ThemeZaa Design',
-            content: 'Lorem ipsum dolor amet consectetur do tempor incididunt labore et dolore magna nostrud exercitation ullamco.',
-            img: 'https://via.placeholder.com/125x125',
+            name: 'João Henrique',
+            designation: 'Afiliado Iniciante',
+            content: '"ANTES DE ADQUIRIR O SOCIAL MONEY, EU NÃO SABIA POR ONDE COMEÇAR PARA GANHAR DINHEIRO COM MINHAS REDES SOCIAIS. AGORA, ESTOU IMPRESSIONADO COM OS RESULTADOS! CONSEGUI CRIAR UMA FONTE DE RENDA CONSISTENTE E ESTOU NO CAMINHO PARA VIVER DO MEU NEGÓCIO ONLINE."',
+            img: '../../../../../assets/img/perfil2.jpg',
         },
         {
-            name: 'Jeremy Girard',
-            designation: 'Microsoft Corporation',
-            content: 'Lorem ipsum dolor amet consectetur do tempor incididunt labore et dolore magna nostrud exercitation ullamco.',
-            img: 'https://via.placeholder.com/125x125'
+            name: 'Julia Beatriz',
+            designation: 'Digital Influencer',
+            content: '"EU NUNCA IMAGINEI QUE PUDESSE GANHAR DINHEIRO COM MEUS POST NO INSTAGRAM. MAS GRAÇAS AO SOCIAL MONEY, APRENDI TÉCNICAS DE ENGAJAMENTO E CONSTRUÇÃO DE AUDIÊNCIA QUE TRANSFORMARAM MEU PERFIL EM UMA VERDADEIRA MÁQUINA DE VENDAS."',
+            img: '../../../../../assets/img/perfil4.jpg'
         },
         {
-            name: 'Alexander Harvard',
-            designation: 'ThemeZaa Design',
-            content: 'Lorem ipsum dolor amet consectetur do tempor incididunt labore et dolore magna nostrud exercitation ullamco.',
-            img: 'https://via.placeholder.com/125x125'
+            name: 'Fernanda Lima',
+            designation: 'Empreendedora Digital',
+            content: '"EU ESTAVA PERDIDA QUANDO SE TRATAVA DE MONETIZAR MINHAS REDES SOCIAIS, MAS GRAÇAS AO SOCIAL MONEY,APRENDI ESTRATÉGIAS EFICIENTES E CONSEGUI AUMENTAR MINHAS RENDA EM 50% EM APENAS UM MÊS. ESTOU SUPER FELIZ, CONSEGUI COMPRAR MEU PRIMEIRO CARRO ZERO!"',
+            img: '../../../../../assets/img/perfil1.jpg'
         }
     ],
     subhead: 'Os comentarios que recebemos são',
@@ -329,8 +335,91 @@ const moduls = {
           buttonTitle: "Ver Próximo",
           buttonLink: "/page/what-we-offer/"
         },
+    ],
+};
+
+const bonus = {
+    title: 'PARA INTENSIFICAR E ACELERAR SUA EVOLUÇÃO',
+    subTitle: 'Bônus exclusivos',
+    description: 'Para que você avance na sua carreira e alcance sues resultados e metas.',
+    content: [
+        {
+            title: "BÔNUS 1",
+            content: "Regras para se Tornar um Vencedor em Qualquer Área da Sua Vida",
+        },
+        {
+            title: "BÔNUS 2",
+            content: "Estruture seu Instagram de Forma Profissional para Negócios",
+        },
+        {
+            title: "BÔNUS 3",
+            content: "Como Escolher Bons Produtos para Divulgar e Começar a Lucrar Hoje",
+        },
+        {
+            title: "BÔNUS 4",
+            content: "Acesso vitalicio e liberação pra revenda como afiliado",
+        },
     ]
-}
+};
+
+
+const cta = {
+    list: [
+        {
+            icon: "fas fa-check text-purple-900",
+            content: "Adquira conhecimento especializado para se destacar e construir uma reputação sólida como influenciador ou empreendedor digital",
+        },
+        {
+            icon: "fas fa-check text-purple-600",
+            content: "Desenvolva a capacidade de transformar suas paixões e habilidades em uma fonte de renda consistente, ganhando dinheiro online",
+        },
+        {
+            icon: "fas fa-check text-purple-600",
+            content: "Descubra os segredos dos empreendedores digitais de sucesso e aprenda a construir um negócio lucrativo nas redes sociais, do zero.",
+        },
+        {
+            icon: "fas fa-check text-purple-600",
+            content: "Liberte-se das limitações financeiras e viva como um nômade, aproveitando as oportunidades de negócios oferecidas pelas redes sociais.",
+        },
+    ],
+    featurebox: [
+        {
+            icon: "line-icon-Bakelite text-gray-300 text-[50px]",
+            title: "Pagamento Seguro",
+            content: "Utilizamos tecnologia de ponta para proteger seus dados financeiros, garantindo uma transação segura e livre de riscos e falhas."
+        },
+        {
+            icon: "line-icon-Medal-2 text-gray-300 text-[50px]",
+            title: "Garantia de Satisfação",
+            content: "Oferecemos garantia de satisfação, que assegura que você pode experimentar nosso treinamento sem preocupações e dúvidas."
+        }
+    ],
+
+};
+
+const quemSomos = {
+    img: "../../../../../assets/img/comendador.png",
+    content: [
+        {
+          number: {
+            text: "20",
+          },
+          title: "MAIS DE VINTE MILHÕES FATURADOS ONLINE",
+        },
+        {
+          number: {
+            text: "12",
+          },
+          title: "MAIS DE DOZE MIL CLIENTES E ALUNOS",
+        },
+        {
+          number: {
+            text: "300",
+          },
+          title: "MAIS DE TREZENTOS AFILIADOS E VENDEDORES",
+        }
+    ]
+};
 
 
 function Home () {
@@ -367,6 +456,22 @@ function Home () {
                     animation={fadeIn} 
                 />
             </Grid>
+            
+            </>
+
+
+            <ContainerModulos 
+                data={moduls}
+            />
+            
+            <ContainerBonusExtra
+                data={bonus}
+            />
+
+            <ContainerChamadaUm
+                data={cta}
+            />
+
             <Grid item sm={12} lg={10}>
                 <ContainerListaTextoDois
                     grid=" py-[120px] "
@@ -379,14 +484,6 @@ function Home () {
                     animationDelay={0.1}
                 />
             </Grid>
-            </>
-
-
-            <ContainerModulos 
-                data={moduls}
-            />
-            
-
 
             <Grid className='bg-lightgray' item xs={12} sm={12} md={12}>
                 <DepoimentoUm
@@ -398,6 +495,10 @@ function Home () {
                     animationDelay={0.3}
                 />
             </Grid>
+
+            <ContainerQuemSomos
+                data={quemSomos}
+            />
 
         </Grid>
         

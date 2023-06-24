@@ -33,7 +33,7 @@ const ContainerListaTextoDois = (props) => {
         <ListaIconeTexto
             grid=" py-[120px] "
             theme="icon-with-text-06"
-            className="hover:text-purple-950 text-purple-400"
+            className="hover:text-purple-950 text-gray-200"
             data={props.data.content}
             xs={xs} sm={sm} md={md} lg={lg} xl={xl}
             animation={fadeIn}

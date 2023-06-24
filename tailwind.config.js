@@ -8,13 +8,11 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'xl': { 'max': '1600px' },
-      'lg': { 'max': '1199px' },
-      'md': { 'max': '991px' },
-      'sm': { 'max': '767px' },
-      'xs': { 'max': '575px' },
-      'xxs': { 'max': '480px' },
-      'mxl': { 'raw': '(min-width: 1921px)' },
+      'xl': { 'max': '1800px' },
+      'lg': { 'max': '1536px' },
+      'md': { 'max': '1200px' },
+      'sm': { 'max': '900px' },
+      'xs': { 'max': '600px' },
     },
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],
